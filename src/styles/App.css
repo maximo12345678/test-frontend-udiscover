@@ -1,0 +1,825 @@
+/* EVERY */
+:root {
+  --banner-color: rgba(1, 1, 1, 0.800);
+  --banner-color2: rgba(20, 20, 20, 0.8);
+
+  --back-color: rgb(67, 115, 207);
+
+  --first-color: rgb(51, 106, 161);
+  --second-color: rgb(111, 201, 149);
+  --third-color: rgb(255, 200, 61);
+
+  --fontGeneric: "Franklin Gothic Medium";
+  --otherFont: "Poppins, Sans-Serif";
+}
+
+
+body {
+  margin: 0;
+}
+
+.genericButton {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px;
+  border: solid 3px var(--third-color);
+  background-color: rgba(0, 0, 0, 0.0);
+  color: var(--third-color);
+  border-radius: 10px;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  cursor: pointer;
+}
+
+.genericButton:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: solid 3px rgb(247, 210, 117);
+
+}
+
+
+.textGreen {
+  color: rgb(0, 255, 106);
+}
+
+.textOrange {
+  color: var(--third-color);
+}
+
+.textBlue {
+  color: var(--first-color);
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* NAV - MENU */
+.nav {
+  top: 0;
+  padding: 10px;
+  display: flex;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: var(--first-color);
+  transition: all 1s;
+  box-shadow: 1px 1px 5px 1px var(--third-color);
+}
+
+.nav-img {
+  list-style: none;
+  padding: 7px 20px;
+
+}
+
+.nav-img img {
+  max-width: 100%;
+  height: 60px;
+}
+
+.nav ul.menu {
+  display: flex;
+}
+
+.nav ul.menu li {
+  list-style: none;
+  font-family: var(--fontGeneric);
+  font-size: 1.3rem;
+  padding: 8px 20px;
+}
+
+.nav ul.menu li a {
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgb(74, 128, 182);
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  transition: all ease 0.7s;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul.menu li a:hover {
+
+  box-shadow: inset -340px 0 0 0 rgb(79, 185, 123);
+  border-radius: 10px;
+}
+
+
+.buttonContact {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 10px 5px;
+  border: none;
+  background-color: var(--second-color);
+  color: white;
+  border-radius: 10px;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+}
+
+.buttonContact:hover {
+  cursor: pointer;
+  background-color: rgb(25, 216, 105);
+}
+
+
+
+
+/* HOME */
+.home {
+  margin-top: 80px;
+}
+
+
+
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 800px;
+  background: -webkit-linear-gradient(to right, var(--banner-color), var(--banner-color)), url("https://cnnespanol.cnn.com/wp-content/uploads/2020/08/200812183257-aprendizaje-virtual-illinois-coronavirus-full-169.jpg?quality=100&strip=info");
+  background: linear-gradient(to right, var(--banner-color2), var(--banner-color2)), url("https://cnnespanol.cnn.com/wp-content/uploads/2020/08/200812183257-aprendizaje-virtual-illinois-coronavirus-full-169.jpg?quality=100&strip=info");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header .main-texts {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-texts h1 {
+  font-family: 'Lucida Sans';
+  margin-top: 50px;
+  font-size: 50px;
+  color: #fff;
+}
+
+.main-texts h2 b {
+  color: var(--first-color);
+}
+
+.main-texts h2 {
+  font-size: 25px;
+  font-weight: normal;
+  font-family: var(--fontGeneric);
+  max-width: 800px;
+  color: #fff;
+
+}
+
+
+
+
+
+
+
+/* SERVICES */
+.services {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, var(--back-color) 20%, white);
+}
+
+.texts-services {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.texts-services h2 {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.texts-services h3 {
+  margin-top: 30px;
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0 30px;
+  color: var(--first-color);
+}
+
+
+.cards-sercices {
+  display: grid;
+  margin: 40px;
+  gap: 2rem;
+  grid-auto-rows: 27rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin-bottom: 100px;
+
+}
+
+.card-service {
+  text-align: center;
+  width: auto;
+  height: auto;
+  /*420px*/
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+
+.title-card {
+  color: rgb(54, 215, 123);
+  font-size: 2rem;
+  line-height: 0.8;
+  font-family: var(--otherFont);
+}
+
+.description-card {
+  color: var(--first-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 200;
+  font-family: var(--otherFont);
+}
+
+
+
+
+
+/* ABOUT US */
+.about-us {
+  width: 100%;
+  height: 1100px;
+  background-image: linear-gradient(to top, var(--second-color) 1%, var(--back-color));
+}
+
+/*text 2*/
+.text2-about-us {
+  display: grid;
+  margin: 150px 20px;
+  gap: 1rem;
+  grid-auto-rows: 11rem;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  font-family: 'Segoe UI';
+}
+
+.text2-about-us img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text2-about-us div {
+  margin-top: 50px;
+}
+
+.text2-about-us div p {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 0.1;
+}
+
+.text2-about-us div h4 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+.text2-about-us div h4 span {
+  color: rgb(0, 255, 106);
+}
+
+/*text 1*/
+.text-about-us {
+  display: grid;
+  margin: 0 140px;
+  gap: 1rem;
+  grid-auto-rows: 11rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  color: white;
+  font-family: 'Segoe UI';
+}
+
+.text-about-us div {
+  margin-top: 30px;
+}
+
+.text-about-us h2 {
+  font-size: 4rem;
+  line-height: 1;
+  width: 320px;
+  text-shadow: 1px 8px 10px black;
+}
+
+.text-about-us h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.text-about-us p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+.text-about-us p span {
+  color: rgb(0, 255, 106);
+}
+
+
+
+
+
+
+
+/* BLOG */
+
+.blog {
+  background-image: linear-gradient(to top, var(--third-color) 10%, var(--second-color));
+  height: 1100px;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  position: relative;
+}
+
+
+.title-blog {
+  margin-top: 0;
+  color: var(--third-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: 'Segoe UI';
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.cards-blog {
+  display: grid;
+  margin: 10px 50px;
+  gap: 2rem;
+  grid-auto-rows: 27rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin-bottom: 100px;
+}
+
+.card-blog {
+  width: auto;
+  height: auto;
+  background-color: white;
+  background-color: rgb(235, 232, 232);
+}
+
+.card-blog img {
+  width: 100%;
+  height: auto;
+}
+
+.content-card-blog {
+  padding: 1px 25px;
+  background-color: white;
+  font-family: 'Segoe UI';
+  margin-bottom: 10px;
+  border-radius: 20px 20px;
+
+}
+
+.content-card-blog h3 {
+  color: var(--first-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: justify;
+}
+
+
+.content-card-blog p {
+  text-align: justify;
+  color: gray;
+}
+
+.content-card-blog a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.content-card-blog span {
+  color: gray;
+}
+
+
+
+/* BANNER DEMODAY */
+.banner-demoday {
+  background-image: white;
+  height: 480px;
+}
+
+.banner-demoday-content {
+  display: grid;
+  gap: 5rem;
+  grid-auto-rows: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.banner-demoday img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.banner-demoday-content div {
+  margin: 50px 40px;
+
+}
+
+.banner-demoday-content div h2 {
+  color: rgb(131, 231, 173);
+  font-size: 3.4rem;
+}
+
+.banner-demoday-content div button {}
+
+
+
+
+
+
+
+/* PLANS */
+.plans {
+  width: 100%;
+  height: auto;
+  /* auto*/
+  background-image: linear-gradient(to top, white, var(--back-color) 90%);
+  background-size: cover;
+  position: relative;
+
+}
+
+.title-plans {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: 'Segoe UI';
+  margin-bottom: 0;
+}
+
+.line {
+  height: 1px;
+  width: 80%;
+  margin: 40px;
+  margin-top: 15px;
+  background-color: var(--first-color);
+}
+
+.cards-plans {
+  display: grid;
+  margin: 40px;
+  gap: 2rem;
+  grid-auto-rows: 31rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin-bottom: 100px;
+
+}
+
+
+/*card*/
+.card-plan {
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  border: solid 2px rgb(201, 197, 197);
+  box-shadow: 1px 2px 10px 1px rgb(199, 199, 199);
+  font-family: 'Segoe UI';
+  color: white;
+  line-height: 0.3;
+  padding: 10px;
+}
+
+
+.card-plan-title {
+  font-size: 1.9rem;
+  line-height: 0.8;
+
+}
+
+.card-plan-pagos {
+  font-size: 1.1rem;
+}
+
+.card-plan-price {
+  font-size: 2rem;
+  color: var(--back-color);
+  border: solid;
+  border-radius: 10px;
+  padding: 14px;
+
+}
+
+.card-plan-price i {
+  font-weight: 400;
+}
+
+.card-plan a button {
+  margin-top: 30px;
+}
+
+.card-plan-content {
+  text-align: left;
+  color: var(--first-color);
+}
+
+.card-plan-content-oldPrice {
+  font-weight: 400;
+  text-decoration: line-through 1px;
+}
+
+.card-plan-content-ahorro {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+
+ 
+
+
+
+
+/* FOOTER */
+footer {
+  margin-top: 400px;
+  background-image: linear-gradient(to bottom, var(--back-color) 65%, var(--second-color));
+  height: auto;
+  padding: 60px 0 30px 0;
+  /* margin: auto; */
+  overflow: hidden;
+
+}
+
+.contenedor-footer {
+  display: grid;
+  gap: 15rem;
+  grid-auto-rows: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: space-evenly;
+  margin: 0 10px;
+  margin-bottom: 250px;
+
+}
+
+
+.content-foo h4 {
+  color: white;
+  font-family: var(--otherFont);
+  font-size: 1.4rem;
+}
+
+.content-foo img {
+  margin-top: 25px;
+}
+
+.content-foo p {
+  color: white;
+}
+
+.icons-redes-footer {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons-redes-footer i {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px 5px;
+  border-radius: 100%;
+  background: white;
+  color: var(--first-color);
+  font-size: 1.7rem;
+}
+
+.icons-redes-footer i:hover {
+  color: var(--back-color)
+}
+
+.content-foo p a {
+  text-decoration: none;
+  color: white;
+}
+
+.content-foo p:hover {
+  text-decoration: double;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 20px 0 0 0;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1130px) {
+
+  /* ABOUT US*/
+  .text2-about-us {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+
+  .text2-about-us img {
+    display: none;
+  }
+
+
+
+  /* PLANS */
+  .card-plan-price {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+
+  /* NAV-MENU */
+  .nav ul.menu {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background: white;
+    z-index: 5;
+    width: 100%;
+    opacity: .9;
+    margin: 15px;
+    transform: translateX(-1300px);
+    transition: all .5s ease-in-out;
+    box-shadow: 2px 4px 5px 1px gray;
+    border-radius: 0 0 0 20px;
+    text-align: center;
+  }
+
+  .nav ul.menu.show {
+    transform: translateX(20px);
+    transition: all .5s ease-in-out;
+
+  }
+
+  .nav ul.menu li {
+    padding: 20px;
+  }
+
+  .nav ul.menu li:hover {
+    background-color: var(--second-color);
+  }
+
+  .nav ul.menu li a {
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  .nav ul.menu li a:hover {
+    box-shadow: 0 0 0 0;
+  }
+
+  /*ABOUT US */
+  .text2-about-us {
+    margin: 250px 40px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+  .quit2 {
+    display: none;
+  }
+
+  /*BANNER*/
+  .banner-demoday-content div h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 630px) {
+
+  /* BLOG */
+  .quit1 {
+    display: none;
+  }
+
+
+  /* PLANS */
+  .title-plans {
+    font-size: 1.8rem;
+  }
+
+
+  /* FOOTER */
+  .contenedor-footer {
+    margin: 0 60px 150px;
+  }
+
+
+  /* PLANS */
+  .card-plan-price {
+    font-size: 1.3rem;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  /* HEADER */
+  .main-texts h1 {
+    font-size: 35px;
+  }
+
+  .main-texts h2 {
+    font-size: 22px;
+  }
+
+
+  /* GENERIC */
+  .genericButton {
+    font-size: 1rem;
+
+  }
+
+
+
+  /* ABOUT ME*/
+  .text-about-us h2 {
+    font-size: 2.8rem;
+  }
+
+  .text-about-us h3 {
+    font-size: 1.3rem;
+  }
+
+  .text-about-us p {
+    font-size: 1rem;
+  }
+
+  .text-about-us {
+    margin: 0 40px;
+  }
+
+
+  /*text2*/
+  .text2-about-us div h4 {
+    font-size: 1rem;
+  }
+
+  .text2-about-us div p {
+    font-size: 1.3rem;
+  }
+
+
+}
+
+
+@media (max-width: 400px) {
+
+  /* SERVICES */
+  .description-card {
+    font-size: 1rem;
+  }
+
+
+}

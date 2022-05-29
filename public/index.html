@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:type" content="website" />
+  <meta name="description"
+    content="Somos un Colegio Virtual bilingüe Americano, con enfoque en Tecnología, Emprendimiento e Innovación." />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="canonical" href="https://ud.school" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+  <title>Virtual School - uDiscover</title>
+</head>
+
+<body>
+  
+  <style>
+    .float {
+      /*https://mega.nz/folder/0ksgWILL#f4tehzJfsQoHmmH4b5WNig*/
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .float:hover {
+      text-decoration: none;
+      color: #25d366;
+      background-color: #fff;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+  </style>
+
+  <a href="https://api.whatsapp.com/send?phone=573054246600&text=%C2%A1%C2%A1Hola%20uDiscover%20Virtual%20School,%20%C2%BFpodr%C3%ADan%20ayudarme%20con%20las%20siguientes%20dudas?"
+    class="float" target="_blank" title="¿Como podemos ayudarte? ¡Contactanos de inmediato!">
+    <i class="fab fa-whatsapp my-float"></i>
+  </a>
+
+  <div id="root"></div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

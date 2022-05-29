@@ -1,0 +1,86 @@
+/* BUTTON MENU https://www.youtube.com/watch?v=Ks8WdDpu7eA&ab_channel=SLeeDw */
+
+.lbl-menu {
+  display: none;
+  top: 25px;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.lbl-menu #spn1,
+#spn2,
+#spn3 {
+  position: absolute;
+  content: '';
+  background: #ffff;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 400ms ease;
+}
+
+#spn2 {
+  top: 12px;
+}
+
+#spn3 {
+  top: 23px;
+}
+
+#btn-menu {
+  display: none;
+}
+
+#btn-menu:checked~.lbl-menu #spn1 {
+  transform: rotate(140deg);
+  top: 10px;
+}
+
+#btn-menu:checked~.lbl-menu #spn2 {
+  opacity: 0;
+}
+
+#btn-menu:checked~.lbl-menu #spn3 {
+  transform: rotate(-140deg);
+  top: 10px;
+}
+
+
+
+@media (max-width: 1000px){
+  .lbl-menu {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

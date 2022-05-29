@@ -1,0 +1,117 @@
+Secciones que no llegue:
+
+
+api, que traiga paises con numero +, y solo paises, para listas desplegables.
+datos de tarjetas planes de pago tenia planeado parametrizarlos para poder modificarlos facilmente en el momento que se desee
+
+sacar animaciones de scroll en algunos elementos, que en version mobile generan bugs.
+
+formulario  
+aliados
+testimonios (si bien es informacion super importante, creo que en el HOME no la colocaria, la incorporaria en otra seccion)
+preguntas / inscripciones
+
+
+El formulario y la seccion de empresas aliadas, lamentablemente no llegue a completarlas al 100%. 
+El formulario lo tenia planeado hacer, mas alla de la interfaz similar al original, con React Hooks, Typescript y 
+varios recursos de React, que son excelentes para este tipo de cosas. De igual manera lo voy a hacer, para practicar.
+
+
+
+
+
+
+
+
+
+
+
+
+------
+Aspectos del home actual: 
+Personalmente quitaria el borde verde que tiene la tarjeta del formulario de inscripcion.
+El menu esta muy bien logrado, desde los colores, hasta el hover, y la animacion de la lista desplegable. 
+Tambien muy agradable a la vista en la version mobile.
+
+Mejoraria el header del home en la version pc, ya que en la version mobile esta perfecta. pero en pc falta una imagen
+e info que en mobile si. entonces al entrar por pc, se ve la mitad del formulario de inscripcion y queda raro.
+
+Un detalle, no relacionado a la interfaz, me gusta el dominio corto, es bueno para el SEO.
+Analizando la estructura de la pagina, solo un titulo con H1 y el resto subtitulos con H2, tambien bueno para el SEO.
+
+Muy calida, amigable y poco invasiva la animacion en la que presentan docentes o madres de estudiantes, con una frase 
+personal al lado. La mejoraria para la version mobile, ya que no se ve igual que en pc.
+
+en la seccion "inscripciones abiertas", esta muy vistosa la forma en que muestran la informacion sin cargar la interfaz
+de mucho texto, o sea con las preguntas y la flecha, indicando de forma intuitiva que presionandola se va a extender
+la informacion. lo unico que mejoraria, seria la manera brusca en que se cierra la animacion del texto.
+
+Muy bonitas las tarjetas donde promocionan sus planes de pago, se entiende la informacion, el precio claro. 
+mejoraria 3 cosas, 
+1- el hover del boton "contacta a tu asesor", sin subrayado y quizas un fondo que no sea transparente.
+2- el tipo de borde, el color esta acertado, pero quizas quedaria mejor otro tipo de borde.
+3- el espacio entre cada tarjeta, en version mobile se ven todas pegadas, simplemente se mejora dando mas margen entre cada una.
+
+El background del footer muy interesante. Quizas un poco abundante la mini-seccion "aliados", pero solo eso.
+
+En general muy buena, se respetan siempre los mismos 3-4 colores, todo contrasta y se entiende bien, 
+la tipografia es linda. 
+
+el logo de whatsapp, lo puse con otro hover y del lado derecho, siento que en version mobile es mas comodo.
+
+segun mi criterio, aunque la pagina esta realmente hermosa y muy bien hecha tanto tecnicamente como de interfaz de usuario, siento que esta un
+poco cargado el home, tiene demasiada informacion y por eso es que decidi hacer un rediseño mas minimalista, siendo que la tendencia hoy en dia
+suele ir por ahi. sin tanta animacion, colores fuertes e imagenes. hoy en dia al ser casi todo multiplataforma, y sabiendo que una pc no tiene
+el mismo procesador que un celular, se piensan interfaces mas livianas y no pesadas o cargadas de cosas.
+aunque entiendo que la eleccion de colores, la eleccion de animaciones e imagenes estan bien elegidas en base a la tematica
+de la pagina, que es una escuela virtual.
+
+
+
+
+
+
+
+A pesar de no marcar explicitamente los titulos, lo dividi de una manera organizada: servicios, nosotros, info, planes de pago, medios de contacto en el footer..
+Para ser el home creo que tiene la informacion justa  
+
+
+
+
+-----
+recursos utilizados:
+
+hackMD para subir las fotos y tenerlas en la nube, no depender de un link externo ni tenerlas ocupando espacio en 
+el proyecto. pero quizas este metodo a veces haga que tarde en cargar la imagen.
+
+Respete la paleta de colores que representa a la empresa.
+
+
+react por varias razones, logra crear interfaces de usuario mucho mas amigables, ademas, pensando que no es una SPA, 
+sino que hay un flujo de datos mas grande, es mejor manejarlo con las herramientas que ofrece react.
+logre una manera super organizada de modularizar las secciones del home por componentes.
+
+el enrutado es mucho mas sencillo de hacer, mas rapido en el navegador a la vista del usuario y ya queda la base para 
+añadir las rutas que sean necesarias.
+
+bootstrap no fue necesario, cree todo en css.
+
+javascript en general utilizado en todo el proyecto y especificamente para capturar el evento del boton del menu.
+typescript para tipar los datos del formulario, para tener una consistencia mas solida en el tipado.
+
+
+
+-----
+
+carpetas proyecto:
+data: archivos javascript donde se hace el acceso a datos necesario, funciones que retornan la informacion y se consume desde 
+los componentes que sea necesario, dejando estos componentes limpios de logica y solo con jsx.
+
+images: para tener todas las imagenes del proyecto en un solo lugar.
+
+pages: los componentes que representan una pagina de una ruta, por ejemplo Home. 
+
+components: todos los componentes reutilizables donde se muestran secciones de html, todas invocadas desde HOME en este caso.
+
+styles: todos los archivos .css organizados en esta carpeta.
+
